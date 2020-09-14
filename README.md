@@ -1,4 +1,4 @@
-# Laravel 7 Rollbar 錯誤追蹤
+# Laravel 8 Rollbar 錯誤追蹤
 
 引入 rollbar 的 rollbar-laravel 套件來擴增 Rollbar 錯誤追蹤整合，資訊寫到日誌同時發送到 Rollbar，方便查看即時動態饋給並獲得即時預警，以了解出現的錯誤。。
 
