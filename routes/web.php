@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\RollbarController;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,5 +13,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/debug', [RollbarController::class, 'debug']);
+Route::get('/debug', function () {
+    $messge = 'My first Rollbar error!';
+    echo $messge . PHP_EOL;
+    Log::debug($messge);
+});
