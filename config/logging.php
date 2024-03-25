@@ -53,16 +53,16 @@ return [
 
     'channels' => [
         'stack' => [
-            'driver' => 'stack',
-            'channels' => ['rollbar', 'single'],
+            'driver'            => 'stack',
+            'channels'          => ['rollbar', 'single'],
             'ignore_exceptions' => false,
         ],
 
         'rollbar' => [
-            'driver' => 'monolog',
-            'handler' => MonologHandler::class,
+            'driver'       => 'monolog',
+            'handler'      => MonologHandler::class,
             'access_token' => env('ROLLBAR_TOKEN'),
-            'level' => 'debug',
+            'level'        => 'debug',
         ],
 
         'single' => [
@@ -110,6 +110,7 @@ return [
         'syslog' => [
             'driver' => 'syslog',
             'level' => env('LOG_LEVEL', 'debug'),
+            'facility' => LOG_USER,
         ],
 
         'errorlog' => [
