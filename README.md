@@ -1,4 +1,4 @@
-# Laravel 11 Rollbar 錯誤追蹤
+# Laravel 12 Rollbar 錯誤追蹤
 
 引入 rollbar 的 rollbar-laravel 套件來擴增 Rollbar 錯誤追蹤整合，資訊寫到日誌同時發送到 Rollbar，方便查看即時動態饋給並獲得即時預警，以了解出現的錯誤。。
 
@@ -16,12 +16,16 @@ $ composer install
 ```sh
 $ php artisan key:generate
 ```
+- 執行 __Artisan__ 指令的 __migrate__ 來執行所有未完成的遷移。
+```sh
+$ php artisan migrate
+```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/debug` 來進行除錯紀錄。
 
 ## 畫面截圖
-![](https://i.imgur.com/NXnr4ps.png)
+![](https://i.imgur.com/hM1rmto.png)
 > 執行除錯紀錄
 
-![](https://i.imgur.com/xtUMRkf.png)
+![](https://i.imgur.com/dfkcKBD.png)
 > 使用 Rollbar 確認除錯的偵測
