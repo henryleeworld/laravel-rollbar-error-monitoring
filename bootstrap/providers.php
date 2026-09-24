@@ -1,6 +1,7 @@
 <?php
 
+use App\Providers\AppServiceProvider;
+
 return [
-    Rollbar\Laravel\RollbarServiceProvider::class,
-    App\Providers\AppServiceProvider::class,
+    AppServiceProvider::class,
 ];
